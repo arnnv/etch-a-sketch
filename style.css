@@ -33,8 +33,25 @@ header {
 .sidebar {
   min-width: 300px;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.change-size {
+  box-sizing: content-box;
+  background-color: #343a40;
+  color: #ced4da;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.sidebar label {
+  font-size: 24px;
 }
 
 .grid-wrap {
@@ -60,16 +77,6 @@ header {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.change-size {
-  background-color: #343a40;
-  color: #ced4da;
-  font-size: 24px;
-  font-weight: 300;
-  padding: 8px 16px;
-  border-style: none;
-  border-radius: 8px;
 }
 
 .change-size:hover {
