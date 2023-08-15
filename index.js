@@ -52,7 +52,7 @@ changeSizeBtn.addEventListener("click", changeSizeBtnFn);
 
 const gridCheckbox = document.querySelector("#gridLines");
 
-gridCheckbox.addEventListener("click", () => {
+gridCheckbox.addEventListener("change", () => {
   const checked = gridCheckbox.checked;
   const boxes = document.querySelectorAll(".box");
   if (!checked) {
